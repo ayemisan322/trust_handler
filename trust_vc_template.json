@@ -1,0 +1,22 @@
+{
+	"@context": "https://www.w3.org/2018/credentials/v1",
+	"id": "$id",
+	"type": [
+		"VerifiableCredential",
+		"TrustCredential"
+	],
+	"issuer": "$issuer",
+	"issuanceDate": "$issuanceDate",
+	"credentialSubject": {
+		"id": "$subjectId",
+		"trust": "Full",
+		"description": "This credential is used to establish trust in the issuer's DID."
+	},
+	"credentialStatus": {
+		"id": "$credentialStatusId",
+		"type": "RevocationList2020Status",
+		"revocationListIndex": "$revokeIndex",
+		"revocationListCredential": "$revocationListCredential"
+	},
+	"proof": {}
+}
